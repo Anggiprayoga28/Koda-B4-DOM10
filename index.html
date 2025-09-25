@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey Perokok</title>
+    <link rel="stylesheet" href="/style/perokok.css">
+    <script src="/script/perokok.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header"></div>
+            <div class="form-title">
+                <h1>Form Survey Perokok</h1>
+            </div>
+            <div class="form-info">
+                <span class="email">anggiprayoga930@gmail.com</span>
+                <a href="#" class="change-account">Ganti akun</a>
+            </div>
+        </div>
+
+        <form id="surveyForm">
+            <div class="question-card">
+                <div class="question-title">Siapa nama anda? <span class="required">*</span></div>
+                <input type="text" class="text-input" id="nama" name="nama" autocomplete="off" placeholder="Jawaban Anda" required>
+            </div>
+
+            <div class="question-card">
+                <div class="question-title">Berapa umur anda? <span class="required">*</span></div>
+                <input type="number" class="text-input" id="umur" name="umur" autocomplete="off" placeholder="Jawaban Anda" min="1" max="150" required>
+            </div>
+
+            <div class="question-card">
+                <div class="question-title">Apa jenis kelamin anda? <span class="required">*</span></div>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki" required>
+                        <label for="laki">Laki-laki</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-title">Apakah anda perokok? <span class="required">*</span></div>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="ya" name="perokok" value="Ya" required>
+                        <label for="ya">Ya</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="tidak" name="perokok" value="Tidak" required>
+                        <label for="tidak">Tidak</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-card" id="jenisRokokSection">
+                <div class="question-title">Jika anda perokok, rokok apa yang pernah anda coba?</div>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="gudang" name="jenisRokok" value="Gudang Garam Filter">
+                        <label for="gudang">Gudang Garam Filter</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="lucky" name="jenisRokok" value="Lucky Strike">
+                        <label for="lucky">Lucky Strike</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="marlboro" name="jenisRokok" value="Marlboro">
+                        <label for="marlboro">Marlboro</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="esse" name="jenisRokok" value="Esse">
+                        <label for="esse">Esse</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <div>
+                    <a href="/pages/submission.html" class="submit-btn">Kirim</a>
+                    <a href="/pages/submission.html" class="view-results-btn" id="viewResultsBtn">Lihat Hasil</a>
+                </div>
+                <a href="#" class="clear-form" id="clearForm">Kosongkan formulir</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
