@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Survey Perokok</title>
+    <link rel="stylesheet" href="/style/submission.css">
+    <script src="/script/submission.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header"></div>
+            <div class="form-title">
+                <h1>Form Survey Perokok</h1>
+            </div>
+        </div>
+        <div class="stats-card success-animation">
+            <h2 id="statsText">Menampilkan 0 Data</h2>
+        </div>
+
+        <div class="table-card success-animation">
+            <div class="table-container">
+                <table class="results-table" id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Umur</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Perokok</th>
+                            <th>Rokok yang pernah dicoba</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsTableBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="noDataMessage" class="no-data" style="display: none;">
+                <h3>Belum ada data survey</h3>
+                <p>Silakan isi survey terlebih dahulu untuk melihat hasil submission.</p>
+            </div>
+        </div>
+
+        <div class="action-buttons success-animation">
+            <a href="/index.html" class="btn btn-primary">Isi Survey Lagi</a>
+        </div>
+    </div>
+</body>
+</html>
